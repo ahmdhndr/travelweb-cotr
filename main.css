@@ -134,9 +134,10 @@ header {
   height: 100%;
   position: absolute;
   top: 0;
-  left: -60%;
+  left: -100%;
   display: grid;
   transition: all 0.5s ease;
+  /* justify-content: space-between; */
 }
 
 .navs.open {
@@ -174,7 +175,7 @@ header {
 }
 
 .navs .book {
-  align-self: end;
+  align-self: flex-start;
   display: flex;
   width: 100%;
   padding: 4px;
@@ -247,14 +248,15 @@ header {
 }
 
 .content {
+  margin: 0 auto;
   display: none;
-  margin-top: -50px;
   color: #22166f;
   position: relative;
   min-width: 100vw;
   min-height: 100vh;
   z-index: 2;
-  padding: 40px 46px;
+  padding: 0 46px;
+  margin-bottom: 30px;
 }
 
 .content .text {
